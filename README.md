@@ -1,4 +1,4 @@
-1) Create eks cluster in the vpc that we created using terraform.
+#1) Create eks cluster in the vpc that we created using terraform.
 2) attached the service arn role for the same.
 3) attached worker node on same that we created using terraform.
 4) install kubectl on eks.
