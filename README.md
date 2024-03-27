@@ -1,6 +1,5 @@
-1) Create eks cluster in the vpc that we created using terraform.
-
-- provider "aws" {
+- Create eks cluster in the vpc that we created using terraform.
+provider "aws" {
   region = "us-west-2"
 }
 
@@ -19,11 +18,11 @@ output "kubeconfig" {
   value = aws_eks_cluster.my_cluster.kubeconfig
 }
 
-2) attached the service arn role for the same.
-3) attached worker node on same that we created using terraform.
-4) install kubectl on eks.
-5) create repo
-6) create the pipeline
-7) deploy the code
-8) try to access the application
+-  attached the service arn role for the same.
+- attached worker node on same that we created using terraform.
+- install kubectl on eks.
+- create repo
+- create the pipeline
+- deploy the code
+- try to access the application
 
