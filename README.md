@@ -1,4 +1,4 @@
-- Terraform
+-- Terraform
 - create main file we write out configutation of resources
 - variable.tf file is to define the name of variable
 - output file is to get the output or name of the resource,same we can used later.
