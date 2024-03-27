@@ -11,6 +11,7 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 script {
+                    sh 'cd terraform'
                     sh 'terraform init'
                 }
             }
@@ -19,6 +20,7 @@ pipeline {
         stage('Terraform Plan') {
             steps {
                 script {
+                    sh 'cd terraform'
                     sh 'terraform plan -out=tfplan'
                 }
             }
@@ -27,6 +29,7 @@ pipeline {
         stage('Terraform Apply') {
             steps {
                 script {
+                    sh 'cd terraform'
                     sh 'terraform apply -auto-approve tfplan'
                 }
             }
